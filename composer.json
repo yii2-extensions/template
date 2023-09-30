@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "yii2\\template\\": "src"
+            "yii\\template\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "yii2\\template\\tests\\": "tests"
+            "yii\\template\\tests\\": "tests"
         }
     },
     "extra": {
