@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Template;
+namespace yii2\template;
 
 final class Example
 {

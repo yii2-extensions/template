@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yii\Extension\Widget\Tests;
+namespace yii2\template\tests;
 
 use PHPUnit\Framework\TestCase;
-use Template\Example;
+use yii2\template\Example;
 
 final class ExampleTest extends TestCase
 {
