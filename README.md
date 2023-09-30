@@ -27,7 +27,7 @@ For install this package, you need [composer](https://getcomposer.org/).
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Ftemplate%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/template/main)
 [![static analysis](https://github.com/yii2-extensions/template/actions/workflows/static.yml/badge.svg)](https://github.com/yii2-extensions/template/actions/workflows/static.yml)
 [![type-coverage](https://shepherd.dev/github/yii2-extensions/template/coverage.svg)](https://shepherd.dev/github/yii2-extensions/template)
-[![StyleCI](https://github.styleci.io/repos/494495136/shield?branch=main)](https://github.styleci.io/repos/494495136?branch=main)
+[![StyleCI](https://github.styleci.io/repos/698621511/shield?branch=main)](https://github.styleci.io/repos/698621511?branch=main)
 
 ## Our social networks
 
