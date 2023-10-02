@@ -2,9 +2,16 @@
     <a href="https://github.com/yii2-extensions/template" target="_blank">
         <img src="https://www.yiiframework.com/image/yii_logo_light.svg" height="100px;">
     </a>
-    <h1 align="center">Template.</h1>
+    <h1 align="center">Yii2-Template.</h1>
     <br>
 </p>
+
+![php-version](https://img.shields.io/badge/php-%3E%3D8.1-787CB5)
+![yii2-version](https://img.shields.io/badge/yii2%20version-2.2-blue)
+[![build](https://github.com/yii2-extensions/template/actions/workflows/build.yml/badge.svg)](https://github.com/yii2-extensions/template/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/yii2-extensions/template/branch/main/graph/badge.svg?token=MF0XUGVLYC)](https://codecov.io/gh/yii2-extensions/template)
+[![static analysis](https://github.com/yii2-extensions/template/actions/workflows/static.yml/badge.svg)](https://github.com/yii2-extensions/template/actions/workflows/static.yml)
+[![StyleCI](https://github.styleci.io/repos/698621511/shield?branch=main)](https://github.styleci.io/repos/698621511?branch=main)
 
 ## Requirements
 
@@ -19,15 +26,6 @@ For install this package, you need [composer](https://getcomposer.org/).
 ## Testing
 
 [Check the documentation testing](/docs/testing.md) to learn about testing.
-
-## CI status
-
-[![build](https://github.com/yii2-extensions/template/actions/workflows/build.yml/badge.svg)](https://github.com/yii2-extensions/template/actions/workflows/build.yml)
-[![codecov](https://codecov.io/gh/yii2-extensions/template/branch/main/graph/badge.svg?token=MF0XUGVLYC)](https://codecov.io/gh/yii2-extensions/template)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Ftemplate%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/template/main)
-[![static analysis](https://github.com/yii2-extensions/template/actions/workflows/static.yml/badge.svg)](https://github.com/yii2-extensions/template/actions/workflows/static.yml)
-[![type-coverage](https://shepherd.dev/github/yii2-extensions/template/coverage.svg)](https://shepherd.dev/github/yii2-extensions/template)
-[![StyleCI](https://github.styleci.io/repos/698621511/shield?branch=main)](https://github.styleci.io/repos/698621511?branch=main)
 
 ## Our social networks
 

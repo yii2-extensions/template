@@ -10,20 +10,12 @@ To run the checker, execute the following command:
 composer run check-dependencies
 ```
 
-## Mutation testing
-
-Mutation testing is checked with [Infection](https://infection.github.io/). To run it:
-
-```shell
-composer run mutation
-```
-
 ## Static analysis
 
-The code is statically analyzed with [Psalm](https://psalm.dev/). To run static analysis:
+The code is statically analyzed with [Phpstan](https://phpstan.org/). To run static analysis:
 
 ```shell
-composer run psalm
+composer run phpstan
 ```
 
 ## Unit tests
