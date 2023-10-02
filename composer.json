@@ -35,7 +35,7 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "infection/extension-installer": true
+            "yiisoft/yii2-composer": true
         }
     },
     "scripts": {
