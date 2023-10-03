@@ -33,4 +33,4 @@ For install this package, you need [composer](https://getcomposer.org/).
 
 ## License
 
-The BSD 3-Clause License. Please see [License File](LICENSE.md) for more information.
+The MIT License. Please see [License File](LICENSE.md) for more information.
