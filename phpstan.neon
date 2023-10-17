@@ -1,5 +1,5 @@
 includes:
-	- vendor/proget-hq/phpstan-yii2/extension.neon
+	- vendor/yii2-extensions/phpstan/extension.neon
 parameters:
     dynamicConstantNames:
         - YII_DEBUG
