@@ -65,4 +65,4 @@ For detailed configuration options and advanced usage.
 
 ## License
 
-![GitHub License](https://img.shields.io/github/license/yii2-extensions/template)
+[![License](https://img.shields.io/github/license/yii2-extensions/template?style=flat)](LICENSE.md)
