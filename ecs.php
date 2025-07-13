@@ -64,7 +64,7 @@ return ECSConfig::configure()
     ->withPhpCsFixerSets(perCS20: true)
     ->withPreparedSets(
         cleanCode: true,
-        comments:true,
+        comments: true,
         docblocks: true,
         namespaces: true,
         strict: true,
