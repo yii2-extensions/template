@@ -13,6 +13,6 @@ final class ExampleTest extends TestCase
     {
         $example = new Example();
 
-        $this->assertTrue($example->getExample());
+        self::assertTrue($example->getExample());
     }
 }
