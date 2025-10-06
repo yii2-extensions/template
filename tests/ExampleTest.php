@@ -14,9 +14,9 @@ final class ExampleTest extends TestCase
         $example = new Example();
 
         self::assertSame(
-            true,
-            $example->getExample(true),
-            "Method should return 'true'",
+            false,
+            $example->getExample(),
+            "Method should return 'false' by default",
         );
     }
 }

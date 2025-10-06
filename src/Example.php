@@ -8,6 +8,6 @@ final class Example
 {
     public function getExample(bool $legacy = false): bool
     {
-        return $legacy !== false;
+        return $legacy;
     }
 }

@@ -11,18 +11,12 @@
 <!-- markdownlint-enable MD041 -->
 
 <p align="center">
-    <a href="https://www.php.net/releases/8.1/en.php" target="_blank">
-        <img src="https://img.shields.io/badge/%3E%3D8.1-777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP version">
-    </a>
-    <a href="https://github.com/yiisoft/yii2/tree/2.0.53" target="_blank">
-        <img src="https://img.shields.io/badge/2.0.x-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white" alt="Yii 2.0.x">
-    </a>
-    <a href="https://github.com/yiisoft/yii2/tree/22.0" target="_blank">
-        <img src="https://img.shields.io/badge/22.0.x-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white" alt="Yii 22.0.x">
-    </a>
     <a href="https://github.com/yii2-extensions/template/actions/workflows/build.yml" target="_blank">
         <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/build.yml?style=for-the-badge&label=PHPUnit&logo=github" alt="PHPUnit">
     </a>
+    <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/template/main" target="_blank">
+        <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Ftemplate%2Fmain" alt="Mutation Testing">
+    </a>        
     <a href="https://github.com/yii2-extensions/template/actions/workflows/static.yml" target="_blank">
         <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
     </a>
@@ -57,6 +51,9 @@ For detailed configuration options and advanced usage.
 
 ## Package information
 
+[![PHP](https://img.shields.io/badge/%3E%3D8.1-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/releases/8.1/en.php)
+[![Yii 2.0.x](https://img.shields.io/badge/2.0.53-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white)](https://github.com/yiisoft/yii2/tree/2.0.53)
+[![Yii 22.0.x](https://img.shields.io/badge/22.0.x-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white)](https://github.com/yiisoft/yii2/tree/22.0)
 [![Latest Stable Version](https://img.shields.io/packagist/v/yii2-extensions/template.svg?style=for-the-badge&logo=packagist&logoColor=white&label=Stable)](https://packagist.org/packages/yii2-extensions/template)
 [![Total Downloads](https://img.shields.io/packagist/dt/yii2-extensions/template.svg?style=for-the-badge&logo=composer&logoColor=white&label=Downloads)](https://packagist.org/packages/yii2-extensions/template)
 
