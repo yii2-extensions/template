@@ -12,6 +12,9 @@ on:
 
 name: build
 
+permissions:
+  contents: read
+
 jobs:
   phpunit:
     uses: yii2-framework/actions/.github/workflows/phpunit.yml@main
