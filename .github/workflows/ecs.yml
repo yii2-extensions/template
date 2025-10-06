@@ -9,7 +9,12 @@ on:
       - "README.md"
 
   push: *ignore-paths
+
 name: ecs
+
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   easy-coding-standard:
