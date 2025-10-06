@@ -13,7 +13,7 @@
         "yiisoft/yii2": "^2.2"
     },
     "require-dev": {
-        "infection/infection": "^0.30",
+        "infection/infection": "^0.29|^0.30",
         "maglnet/composer-require-checker": "^4.1",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-strict-rules": "^2.0.3",
