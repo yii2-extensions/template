@@ -1,27 +1,25 @@
+<!-- markdownlint-disable MD041 -->
 <p align="center">
-    <a href="https://github.com/yii2-extensions/template" target="_blank">
-        <img src="https://www.yiiframework.com/image/yii_logo_light.svg" alt="Yii Framework">
-    </a>
-    <h1 align="center">Extension template</h1>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://www.yiiframework.com/image/design/logo/yii3_full_for_dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://www.yiiframework.com/image/design/logo/yii3_full_for_light.svg">
+        <img src="https://www.yiiframework.com/image/design/logo/yii3_full_for_dark.svg" alt="Yii Framework" width="80%">
+    </picture>
+    <h1 align="center">Template</h1>
     <br>
 </p>
+<!-- markdownlint-enable MD041 -->
 
 <p align="center">
-    <a href="https://www.php.net/releases/8.1/en.php" target="_blank">
-        <img src="https://img.shields.io/badge/PHP-%3E%3D8.1-787CB5" alt="PHP Version">
-    </a>
-    <a href="https://github.com/yiisoft/yii2/tree/2.0.53" target="_blank">
-        <img src="https://img.shields.io/badge/Yii2%20-2.0.53-blue" alt="Yii2 2.0.53">
-    </a>
-    <a href="https://github.com/yiisoft/yii2/tree/22.0" target="_blank">
-        <img src="https://img.shields.io/badge/Yii2%20-22-blue" alt="Yii2 22.0">
-    </a>
     <a href="https://github.com/yii2-extensions/template/actions/workflows/build.yml" target="_blank">
-        <img src="https://github.com/yii2-extensions/template/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
-    </a> 
-    <a href="https://github.com/yii2-extensions/template/actions/workflows/static.yml" target="_blank">        
-        <img src="https://github.com/yii2-extensions/template/actions/workflows/static.yml/badge.svg" alt="Static Analysis">
-    </a>  
+        <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/build.yml?style=for-the-badge&label=PHPUnit&logo=github" alt="PHPUnit">
+    </a>
+    <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/template/main" target="_blank">
+        <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Ftemplate%2Fmain" alt="Mutation Testing">
+    </a>
+    <a href="https://github.com/yii2-extensions/template/actions/workflows/static.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
+    </a>
 </p>
 
 A Yii2 extension template to create your own Yii2 extensions.
@@ -47,17 +45,24 @@ Describe how to use your extension in a basic way.
 For detailed configuration options and advanced usage.
 
 - 📚 [Installation Guide](docs/installation.md)
-- ⚙️ [Configuration Reference](docs/configuration.md) 
+- ⚙️ [Configuration Reference](docs/configuration.md)
 - 💡 [Usage Examples](docs/examples.md)
 - 🧪 [Testing Guide](docs/testing.md)
 
+## Package information
+
+[![PHP](https://img.shields.io/badge/%3E%3D8.1-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/releases/8.1/en.php)
+[![Yii 2.0.x](https://img.shields.io/badge/2.0.53-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white)](https://github.com/yiisoft/yii2/tree/2.0.53)
+[![Yii 22.0.x](https://img.shields.io/badge/22.0.x-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white)](https://github.com/yiisoft/yii2/tree/22.0)
+[![Latest Stable Version](https://img.shields.io/packagist/v/yii2-extensions/template.svg?style=for-the-badge&logo=packagist&logoColor=white&label=Stable)](https://packagist.org/packages/yii2-extensions/template)
+[![Total Downloads](https://img.shields.io/packagist/dt/yii2-extensions/template.svg?style=for-the-badge&logo=composer&logoColor=white&label=Downloads)](https://packagist.org/packages/yii2-extensions/template)
+
 ## Quality code
 
-[![Latest Stable Version](https://poser.pugx.org/yii2-extensions/template/v)](https://github.com/yii2-extensions/template/releases)
-[![Total Downloads](https://poser.pugx.org/yii2-extensions/template/downloads)](https://packagist.org/packages/yii2-extensions/template)
-[![codecov](https://codecov.io/gh/yii2-extensions/template/graph/badge.svg?token=Upc4yA23YN)](https://codecov.io/gh/yii2-extensions/template)
-[![phpstan-level](https://img.shields.io/badge/PHPStan%20level-max-blue)](https://github.com/yii2-extensions/localeurls/actions/workflows/static.yml)
-[![StyleCI](https://github.styleci.io/repos/698621511/shield?branch=main)](https://github.styleci.io/repos/698621511?branch=main)
+[![Codecov](https://img.shields.io/codecov/c/github/yii2-extensions/template.svg?style=for-the-badge&logo=codecov&logoColor=white&label=Coverage)](https://codecov.io/github/yii2-extensions/template)
+[![PHPStan Level Max](https://img.shields.io/badge/PHPStan-Level%20Max-4F5D95.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yii2-extensions/template/actions/workflows/static.yml)
+[![Super-Linter](https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/linter.yml?style=for-the-badge&label=Super-Linter&logo=github)](https://github.com/yii2-extensions/template/actions/workflows/linter.yml)
+[![StyleCI](https://img.shields.io/badge/StyleCI-Passed-44CC11.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.styleci.io/repos/698621511?branch=main)
 
 ## Our social networks
 

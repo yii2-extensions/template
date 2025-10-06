@@ -6,8 +6,8 @@ namespace yii\template;
 
 final class Example
 {
-    public function getExample(): bool
+    public function getExample(bool $legacy = false): bool
     {
-        return true;
+        return $legacy;
     }
 }
