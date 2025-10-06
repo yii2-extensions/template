@@ -13,6 +13,10 @@ final class ExampleTest extends TestCase
     {
         $example = new Example();
 
-        self::assertTrue($example->getExample());
+        self::assertSame(
+            true,
+            $example->getExample(true),
+            "Method should return 'true'",
+        );
     }
 }
