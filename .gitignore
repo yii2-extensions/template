@@ -10,6 +10,7 @@ composer.lock
 # gitHub copilot config (if present)
 .copilot/
 .github/copilot/**
+.github/agents/**
 
 # mac ds_store (if present)
 .DS_Store
