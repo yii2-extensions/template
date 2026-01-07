@@ -82,7 +82,7 @@ composer run static
 
 ---
 
-### Unit Testing
+## Unit Testing
 
 Executes unit tests to verify functionality and ensure code correctness.
 
