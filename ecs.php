@@ -6,6 +6,7 @@ use PhpCsFixer\Fixer\ClassNotation\{ClassDefinitionFixer, OrderedClassElementsFi
 use PhpCsFixer\Fixer\Import\{NoUnusedImportsFixer, OrderedImportsFixer};
 use PhpCsFixer\Fixer\Phpdoc\PhpdocTypesOrderFixer;
 use PhpCsFixer\Fixer\StringNotation\SingleQuoteFixer;
+use PhpCsFixer\Fixer\LanguageConstruct\NullableTypeDeclarationFixer;
 use Symplify\EasyCodingStandard\Config\ECSConfig;
 
 return ECSConfig::configure()
@@ -76,5 +77,10 @@ return ECSConfig::configure()
             NoUnusedImportsFixer::class,
             OrderedTraitsFixer::class,
             SingleQuoteFixer::class,
+        ]
+    )
+    ->withSkip(
+        [
+            NullableTypeDeclarationFixer::class,
         ]
     );
