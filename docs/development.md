@@ -15,16 +15,16 @@ composer run sync-metadata
 
 This command updates the following configuration files:
 
-| File | Purpose |
-|------|---------|
-| `.editorconfig` | Editor settings and code style configuration |
-| `.gitattributes` | Git attributes and file handling rules |
-| `.gitignore` | Git ignore patterns and exclusions |
-| `ecs.php` | Easy Coding Standard configuration |
-| `infection.json5` | Infection mutation testing configuration |
-| `phpstan.neon` | PHPStan static analysis configuration |
-| `phpunit.xml.dist` | PHPUnit test configuration |
-| `rector.php` | Rector refactoring configuration |
+| File               | Purpose                                      |
+| ------------------ | -------------------------------------------- |
+| `.editorconfig`    | Editor settings and code style configuration |
+| `.gitattributes`   | Git attributes and file handling rules       |
+| `.gitignore`       | Git ignore patterns and exclusions           |
+| `ecs.php`          | Easy Coding Standard configuration           |
+| `infection.json5`  | Infection mutation testing configuration     |
+| `phpstan.neon`     | PHPStan static analysis configuration        |
+| `phpunit.xml.dist` | PHPUnit test configuration                   |
+| `rector.php`       | Rector refactoring configuration             |
 
 ### When to Run
 

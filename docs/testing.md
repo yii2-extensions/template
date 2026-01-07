@@ -6,8 +6,8 @@ This document describes the quality assurance tools and testing workflows availa
 
 Automatically refactors code to modern standards and applies best practices.
 
-| Tool | Command | Target | Purpose |
-|------|---------|--------|---------|
+| Tool                             | Command               | Target | Purpose                        |
+| -------------------------------- | --------------------- | ------ | ------------------------------ |
 | [Rector](https://getrector.com/) | `composer run rector` | `src/` | Upgrade and modernize codebase |
 
 ```shell
@@ -20,8 +20,8 @@ composer run rector
 
 Automatically fixes coding standard issues to maintain consistent code style across the project.
 
-| Tool | Command | Purpose |
-|------|---------|---------|
+| Tool                                                                                 | Command            | Purpose                                   |
+| ------------------------------------------------------------------------------------ | ------------------ | ----------------------------------------- |
 | [Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard) | `composer run ecs` | Enforce PER 3.0 + PSR-12 coding standards |
 
 ```shell
@@ -34,8 +34,8 @@ composer run ecs
 
 Checks if all dependencies are correctly defined in `composer.json` to avoid missing packages in production.
 
-| Tool | Command | Purpose |
-|------|---------|---------|
+| Tool                                                                          | Command                           | Purpose                                                            |
+| ----------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------ |
 | [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) | `composer run check-dependencies` | Verify all used classes and functions are declared as dependencies |
 
 ```shell
@@ -48,15 +48,15 @@ composer run check-dependencies
 
 Evaluates the quality of your test suite by introducing mutations and checking if tests catch them.
 
-| Tool | Command | Coverage | Purpose |
-|------|---------|----------|---------|
+| Tool                                      | Command                 | Coverage | Purpose                          |
+| ----------------------------------------- | ----------------------- | -------- | -------------------------------- |
 | [Infection](https://infection.github.io/) | `composer run mutation` | 100% MSI | Measure test suite effectiveness |
 
 ```shell
 composer run mutation
 ```
 
-___
+---
 
 ## Mutation Testing with Static Analysis
 
@@ -72,8 +72,8 @@ composer run mutation-static
 
 Performs static code analysis to detect bugs, type errors, and code quality issues before runtime.
 
-| Tool | Command | Level | Purpose |
-|------|---------|-------|---------|
+| Tool                            | Command               | Level     | Purpose                               |
+| ------------------------------- | --------------------- | --------- | ------------------------------------- |
 | [PHPStan](https://phpstan.org/) | `composer run static` | Level Max | Detect type errors and potential bugs |
 
 ```shell
@@ -86,8 +86,8 @@ composer run static
 
 Executes unit tests to verify functionality and ensure code correctness.
 
-| Tool | Command | Framework | Purpose |
-|------|---------|-----------|---------|
+| Tool                           | Command              | Framework   | Purpose              |
+| ------------------------------ | -------------------- | ----------- | -------------------- |
 | [PHPUnit](https://phpunit.de/) | `composer run tests` | PHPUnit 10+ | Verify code behavior |
 
 ```shell
