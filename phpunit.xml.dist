@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
   bootstrap="tests/bootstrap.php"
-  cacheDirectory="runtime/.phpunit.cache"
+  cacheDirectory="./runtime/.phpunit.cache"
   colors="true"
   executionOrder="depends,defects"
   failOnRisky="true"
