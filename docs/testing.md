@@ -1,95 +1,73 @@
 # Testing
 
-This document describes the quality assurance tools and testing workflows available in this project.
+This package provides a consistent set of [Composer](https://getcomposer.org/) scripts for local validation.
 
-## Code refactoring
+Tool references:
 
-Automatically refactors code to modern standards and applies best practices.
+- [Composer Require Checker](https://github.com/maglnet/ComposerRequireChecker) for dependency definition checks.
+- [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard) for coding standards.
+- [Infection](https://infection.github.io/) for mutation testing.
+- [PHPStan](https://phpstan.org/) for static analysis.
+- [PHPUnit](https://phpunit.de/) for unit tests.
 
-| Tool                             | Command               | Target | Purpose                        |
-| -------------------------------- | --------------------- | ------ | ------------------------------ |
-| [Rector](https://getrector.com/) | `composer run rector` | `src/` | Upgrade and modernize codebase |
+## Coding standards (ECS)
 
-```shell
-composer run rector
-```
+Run Easy Coding Standard (ECS) and apply fixes.
 
----
-
-## Code style and standards
-
-Automatically fixes coding standard issues to maintain consistent code style across the project.
-
-| Tool                                                                                 | Command            | Purpose                                   |
-| ------------------------------------------------------------------------------------ | ------------------ | ----------------------------------------- |
-| [Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard) | `composer run ecs` | Enforce PER 3.0 + PSR-12 coding standards |
-
-```shell
+```bash
 composer run ecs
 ```
 
----
+## Dependency definition check
 
-## Dependency checking
+Verify that runtime dependencies are correctly declared in `composer.json`.
 
-Checks if all dependencies are correctly defined in `composer.json` to avoid missing packages in production.
-
-| Tool                                                                          | Command                           | Purpose                                                            |
-| ----------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------ |
-| [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) | `composer run check-dependencies` | Verify all used classes and functions are declared as dependencies |
-
-```shell
+```bash
 composer run check-dependencies
 ```
 
----
+## Mutation testing (Infection)
 
-## Mutation Testing
+Run mutation testing.
 
-Evaluates the quality of your test suite by introducing mutations and checking if tests catch them.
-
-| Tool                                      | Command                 | Coverage | Purpose                          |
-| ----------------------------------------- | ----------------------- | -------- | -------------------------------- |
-| [Infection](https://infection.github.io/) | `composer run mutation` | 100% MSI | Measure test suite effectiveness |
-
-```shell
+```bash
 composer run mutation
 ```
 
----
+Run mutation testing with static analysis enabled.
 
-## Mutation Testing with Static Analysis
-
-Combines mutation testing with PHPStan analysis for comprehensive quality checks.
-
-```shell
+```bash
 composer run mutation-static
 ```
 
----
+## Static analysis (PHPStan)
 
-## Static Analysis
+Run static analysis.
 
-Performs static code analysis to detect bugs, type errors, and code quality issues before runtime.
-
-| Tool                            | Command               | Level     | Purpose                               |
-| ------------------------------- | --------------------- | --------- | ------------------------------------- |
-| [PHPStan](https://phpstan.org/) | `composer run static` | Level Max | Detect type errors and potential bugs |
-
-```shell
+```bash
 composer run static
 ```
 
----
+## Unit tests (PHPUnit)
 
-## Unit Testing
+Run the full test suite.
 
-Executes unit tests to verify functionality and ensure code correctness.
-
-| Tool                           | Command              | Framework   | Purpose              |
-| ------------------------------ | -------------------- | ----------- | -------------------- |
-| [PHPUnit](https://phpunit.de/) | `composer run tests` | PHPUnit 10+ | Verify code behavior |
-
-```shell
+```bash
 composer run tests
+```
+
+## Passing extra arguments
+
+Composer scripts support forwarding additional arguments using `--`.
+
+Example: run a specific PHPUnit test or filter by name.
+
+```bash
+composer run tests -- --filter SvgTest
+```
+
+Example: run PHPStan with a different memory limit:
+
+```bash
+composer run static -- --memory-limit=512M
 ```
