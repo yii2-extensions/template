@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 use PhpCsFixer\Fixer\ClassNotation\{ClassDefinitionFixer, OrderedClassElementsFixer, OrderedTraitsFixer};
 use PhpCsFixer\Fixer\Import\{NoUnusedImportsFixer, OrderedImportsFixer};
-use PhpCsFixer\Fixer\Phpdoc\PhpdocTypesOrderFixer;
-use PhpCsFixer\Fixer\StringNotation\SingleQuoteFixer;
 use PhpCsFixer\Fixer\LanguageConstruct\NullableTypeDeclarationFixer;
+use PhpCsFixer\Fixer\Phpdoc\PhpdocTypesOrderFixer;
+use PhpCsFixer\Fixer\PhpUnit\PhpUnitTestCaseStaticMethodCallsFixer;
+use PhpCsFixer\Fixer\StringNotation\SingleQuoteFixer;
 use Symplify\EasyCodingStandard\Config\ECSConfig;
 
 return ECSConfig::configure()
@@ -14,6 +15,12 @@ return ECSConfig::configure()
         ClassDefinitionFixer::class,
         [
             'space_before_parenthesis' => true,
+        ],
+    )
+    ->withConfiguredRule(
+        NullableTypeDeclarationFixer::class,
+        [
+            'syntax' => 'union',
         ],
     )
     ->withConfiguredRule(
@@ -31,6 +38,7 @@ return ECSConfig::configure()
                 'construct',
                 'destruct',
                 'magic',
+                'method_public_abstract',
                 'method_protected_abstract',
                 'method_public',
                 'method_protected',
@@ -57,6 +65,12 @@ return ECSConfig::configure()
             'null_adjustment' => 'always_last',
         ],
     )
+    ->withConfiguredRule(
+        PhpUnitTestCaseStaticMethodCallsFixer::class,
+        [
+            'call_type' => 'self',
+        ],
+    )
     ->withFileExtensions(['php'])
     ->withPaths(
         [
@@ -77,10 +91,5 @@ return ECSConfig::configure()
             NoUnusedImportsFixer::class,
             OrderedTraitsFixer::class,
             SingleQuoteFixer::class,
-        ]
-    )
-    ->withSkip(
-        [
-            NullableTypeDeclarationFixer::class,
         ]
     );
