@@ -22,7 +22,15 @@ return static function (\Rector\Config\RectorConfig $rectorConfig): void {
         ],
     );
 
-    $rectorConfig->rule(
-        \Rector\CodeQuality\Rector\BooleanAnd\SimplifyEmptyArrayCheckRector::class
+    $rectorConfig->skip(
+        [
+            \Rector\TypeDeclaration\Rector\Class_\TypedPropertyFromCreateMockAssignRector::class,
+        ],
+    );
+
+    $rectorConfig->rules(
+        [
+            \Rector\CodeQuality\Rector\BooleanAnd\SimplifyEmptyArrayCheckRector::class,
+        ],
     );
 };
