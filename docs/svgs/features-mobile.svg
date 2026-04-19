@@ -1,75 +1,57 @@
-<!-- Versión móvil - Una sola columna -->
-<svg fill="none" viewBox="0 0 600 580" width="100%" height="580" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <style>
-                .container {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 16px;
-                    padding: 16px;
-                }
-                .alert-box {
-                    border-left: 4px solid #1f883d;
-                    padding: 12px;
-                    margin-bottom: 12px;
-                    border-radius: 6px;
-                    background: rgba(31, 136, 61, 0.1);
-                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                    width: 100%;
-                    box-sizing: border-box;
-                }
-                .alert-title {
-                    margin: 0 0 8px 0;
-                    font-weight: 600;
-                    font-size: 14px;
-                }
-                .alert-content {
-                    margin: 0;
-                    line-height: 1.4;
-                    font-size: 12px;
-                }
+<!-- Mobile version - Single column -->
+<svg viewBox="0 0 620 620" width="100%" height="580" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .box-bg { fill: #e6f4ea; stroke: #a7cdb3; stroke-width: 1; }
+        .title { font-weight: 700; font-size: 14px; fill: #1a202c; }
+        .content { font-size: 11px; fill: #4a5568; }
+    </style>
 
-                /* Light mode */
-                @media (prefers-color-scheme: light) {
-                    .alert-title { color: #000000; }
-                    .alert-content { color: #333333; }
-                    .alert-box { background: rgba(31, 136, 61, 0.1); }
-                }
+    <g>
+        <rect class="box-bg" x="16" y="16" width="588" height="84" rx="6"/>
+        <rect x="16" y="16" width="4" height="84" fill="#1f883d"/>
+        <text class="title" x="32" y="42">Best Practices</text>
+        <text class="content" x="32" y="66">PSR standards &#8226; Clean code &#8226; Documentation ready</text>
+        <text class="content" x="32" y="84">PER 3.0 + PSR-12 coding standards</text>
+    </g>
 
-                /* Dark mode */
-                @media (prefers-color-scheme: dark) {
-                    .alert-title { color: #ffffff; }
-                    .alert-content { color: #ffffff; }
-                    .alert-box { background: rgba(31, 136, 61, 0.2); }
-                }
-            </style>
-            <div class="container">
-                <div class="alert-box">
-                    <p class="alert-title"><strong>Best Practices</strong></p>
-                    <p class="alert-content">PSR standards • Clean code • Documentation ready</p>
-                </div>
-                <div class="alert-box">
-                    <p class="alert-title"><strong>Easy Setup</strong></p>
-                    <p class="alert-content">Quick start template • Configuration examples • Clear structure</p>
-                </div>
-                <div class="alert-box">
-                    <p class="alert-title"><strong>GitHub Actions</strong></p>
-                    <p class="alert-content">CI/CD workflows • Automated testing • Quality checks</p>
-                </div>
-                <div class="alert-box">
-                    <p class="alert-title"><strong>Quality Tools</strong></p>
-                    <p class="alert-content">PHPStan Level Max • StyleCI • Super-Linter integration</p>
-                </div>
-                <div class="alert-box">
-                    <p class="alert-title"><strong>PHP 8.1+</strong></p>
-                    <p class="alert-content">Modern PHP features • Type safety • Performance optimizations</p>
-                </div>
-                <div class="alert-box">
-                    <p class="alert-title"><strong>Testing Ready</strong></p>
-                    <p class="alert-content">PHPUnit setup • Mutation testing • Codecov integration</p>
-                </div>
-            </div>
-        </div>
-    </foreignObject>
+    <g>
+        <rect class="box-bg" x="16" y="116" width="588" height="84" rx="6"/>
+        <rect x="16" y="116" width="4" height="84" fill="#1f883d"/>
+        <text class="title" x="32" y="142">Easy Setup</text>
+        <text class="content" x="32" y="166">Quick start template &#8226; Configuration examples &#8226; Clear structure</text>
+        <text class="content" x="32" y="184">Ready-to-use project scaffolding</text>
+    </g>
+
+    <g>
+        <rect class="box-bg" x="16" y="216" width="588" height="84" rx="6"/>
+        <rect x="16" y="216" width="4" height="84" fill="#1f883d"/>
+        <text class="title" x="32" y="242">GitHub Actions</text>
+        <text class="content" x="32" y="266">CI/CD workflows &#8226; Automated testing &#8226; Quality checks</text>
+        <text class="content" x="32" y="284">Super-Linter &#8226; PHPStan &#8226; ECS &#8226; Infection</text>
+    </g>
+
+    <g>
+        <rect class="box-bg" x="16" y="316" width="588" height="84" rx="6"/>
+        <rect x="16" y="316" width="4" height="84" fill="#1f883d"/>
+        <text class="title" x="32" y="342">Quality Tools</text>
+        <text class="content" x="32" y="366">PHPStan Level Max &#8226; StyleCI &#8226; Super-Linter integration</text>
+        <text class="content" x="32" y="384">Mutation testing with 100% MSI requirement</text>
+    </g>
+
+    <g>
+        <rect class="box-bg" x="16" y="416" width="588" height="84" rx="6"/>
+        <rect x="16" y="416" width="4" height="84" fill="#1f883d"/>
+        <text class="title" x="32" y="442">PHP 8.3+</text>
+        <text class="content" x="32" y="466">Modern PHP features &#8226; Type safety &#8226; Performance optimizations</text>
+        <text class="content" x="32" y="484">Multi-version CI matrix: 8.3, 8.4, 8.5</text>
+    </g>
+
+    <g>
+        <rect class="box-bg" x="16" y="516" width="588" height="84" rx="6"/>
+        <rect x="16" y="516" width="4" height="84" fill="#1f883d"/>
+        <text class="title" x="32" y="542">Testing Ready</text>
+        <text class="content" x="32" y="566">PHPUnit 11.5 &#8226; Mutation testing &#8226; Codecov integration</text>
+        <text class="content" x="32" y="584">Dependency checker &#8226; Rector automated refactoring</text>
+    </g>
 </svg>
