@@ -13,13 +13,11 @@ final class ExampleTest extends TestCase
     {
         $example = new Example();
 
-        self::assertSame(
-            false,
+        self::assertFalse(
             $example->getExample(),
             "Method should return 'false' by default.",
         );
-        self::assertSame(
-            true,
+        self::assertTrue(
             $example->getExample(true),
             "Method should return 'true' when legacy parameter is 'true'.",
         );
