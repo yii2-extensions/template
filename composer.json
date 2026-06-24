@@ -13,13 +13,13 @@
         "yiisoft/yii2": "^22"
     },
     "require-dev": {
-        "infection/infection": "^0.32",
+        "infection/infection": "^0.33",
         "maglnet/composer-require-checker": "^4.1",
-        "php-forge/coding-standard": "^0.1",
+        "php-forge/coding-standard": "^0.3",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-phpunit": "^2.0",
         "phpstan/phpstan-strict-rules": "^2.0.3",
-        "phpunit/phpunit": "^11.5",
+        "phpunit/phpunit": "^12.5",
         "yii2-extensions/phpstan": "^0.4"
     },
     "autoload": {

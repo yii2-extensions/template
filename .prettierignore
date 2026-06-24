@@ -1,0 +1,12 @@
+# Local editor and generated runtime state.
+.vscode/**
+runtime/**
+
+# Dependencies.
+vendor/**
+
+# Dependency lockfile ignored by git.
+composer.lock
+
+# License texts ship verbatim.
+**/LICENSE*
