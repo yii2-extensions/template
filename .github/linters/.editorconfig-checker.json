@@ -1,0 +1,7 @@
+{
+    "Exclude": [
+        "^composer\\.lock$",
+        "^runtime/",
+        "^vendor/"
+    ]
+}
