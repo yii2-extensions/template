@@ -19,7 +19,52 @@ Run Rector to apply automated code refactoring.
 composer rector
 ```
 
+## Repository quality checks
+
+Make the CLI tools used by the shared quality workflow available on `PATH`:
+actionlint with its ShellCheck helper, codespell, EditorConfig Checker, markdownlint-cli2, Prettier and
+yamllint. The command reads the repository's linter, formatter and ignore files. It skips ignored local dependency, runtime and private artifact trees that are absent from a clean CI checkout.
+
+```bash
+composer quality
+```
+
+## Workflow security checks
+
+Make zizmor and Gitleaks available on `PATH`. Audit the current workflow files
+with the same pedantic persona used by the shared security workflow:
+
+```bash
+composer zizmor
+```
+
+Run that audit and scan Git history for secrets with the repository's Gitleaks
+configuration. Findings make the command fail; inspect them rather than disabling
+the checks.
+
+```bash
+composer security
+```
+
+Zizmor needs GitHub API access for its online audits. If the tool runs offline,
+report that limit separately. To request an offline audit explicitly:
+
+```bash
+composer zizmor -- --offline
+```
+
+Report hosted CI execution and its PHP/OS matrix separately from these local
+commands. Keep generated reports in ignored `internal/`.
+
 ## Coding standards (ECS)
+
+Check coding standards without modifying files:
+
+```bash
+composer ecs-check
+```
+
+`composer ecs` applies fixes. Review its changes before keeping them.
 
 Run Easy Coding Standard (ECS) and apply fixes.
 
@@ -72,7 +117,7 @@ Composer scripts support forwarding additional arguments using `--`.
 Run PHPUnit with code coverage report generation.
 
 ```bash
-composer tests -- --coverage-html code_coverage
+composer tests -- --coverage-html internal/coverage
 ```
 
 Run PHPStan with a different memory limit.
@@ -80,3 +125,5 @@ Run PHPStan with a different memory limit.
 ```bash
 composer static -- --memory-limit=512M
 ```
+
+[Back to documentation](../README.md#documentation)

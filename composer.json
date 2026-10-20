@@ -6,11 +6,11 @@
         "_____"
     ],
     "license": "BSD-3-Clause",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
         "php": ">=8.3",
-        "yiisoft/yii2": "^22"
+        "yiisoft/yii2": "^22.0@dev"
     },
     "require-dev": {
         "infection/infection": "^0.35",
@@ -20,7 +20,7 @@
         "phpstan/phpstan-phpunit": "^2.0",
         "phpstan/phpstan-strict-rules": "^2.0.3",
         "phpunit/phpunit": "^12.5",
-        "yii2-extensions/phpstan": "^0.4"
+        "yii2-extensions/phpstan": "^0.5"
     },
     "autoload": {
         "psr-4": {
@@ -49,9 +49,23 @@
         "check-dependencies": "./vendor/bin/composer-require-checker check",
         "ecs": "./vendor/bin/ecs --fix",
         "mutation": "./vendor/bin/infection --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100",
-        "mutation-static": "./vendor/bin/infection --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100 --static-analysis-tool=phpstan --static-analysis-tool-options='--memory-limit=-1'",
+        "mutation-static": "php -d memory_limit=-1 ./vendor/bin/infection --initial-tests-php-options='-d memory_limit=-1' --test-framework-extra-args='-d memory_limit=-1' --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100 --static-analysis-tool=phpstan --static-analysis-tool-options='--memory-limit=-1'",
+        "quality": [
+            "actionlint",
+            "codespell --config .github/linters/.codespellrc",
+            "editorconfig-checker -config .github/linters/.editorconfig-checker.json",
+            "markdownlint-cli2 --config .github/linters/.markdown-lint.yml '**/*.md'",
+            "prettier --check --config .prettierrc.json --ignore-path .prettierignore '**/*.md' '**/*.{yml,yaml}'",
+            "yamllint -c .github/linters/.yamllint.yml .github"
+        ],
         "rector": "./vendor/bin/rector process",
+        "security": [
+            "@zizmor",
+            "gitleaks git --config .github/linters/.gitleaks.toml --redact"
+        ],
         "static": "./vendor/bin/phpstan --memory-limit=-1",
-        "tests": "./vendor/bin/phpunit"
+        "tests": "./vendor/bin/phpunit",
+        "zizmor": "zizmor --persona=pedantic .github",
+        "ecs-check": "./vendor/bin/ecs check --ansi"
     }
 }
