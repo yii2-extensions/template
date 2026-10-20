@@ -10,63 +10,38 @@ Tool references:
 - [PHPStan](https://phpstan.org/) for static analysis.
 - [PHPUnit](https://phpunit.de/) for unit tests.
 - [Rector](https://github.com/rectorphp/rector) for automated refactoring.
+- [actionlint](https://github.com/rhysd/actionlint) for GitHub Actions workflow linting.
+- [codespell](https://github.com/codespell-project/codespell) for spelling checks.
+- [EditorConfig Checker](https://github.com/editorconfig-checker/editorconfig-checker) for EditorConfig compliance.
+- [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for Markdown linting.
+- [Prettier](https://prettier.io/) for Markdown and YAML formatting checks.
+- [yamllint](https://github.com/adrienverge/yamllint) for YAML linting.
+- [zizmor](https://github.com/zizmorcore/zizmor) for GitHub Actions security audits.
+- [Gitleaks](https://github.com/gitleaks/gitleaks) for secret scanning.
 
 ## Automated refactoring (Rector)
 
-Run Rector to apply automated code refactoring.
+Run Rector to apply automated code refactoring. This command modifies files.
 
 ```bash
 composer rector
 ```
 
-## Repository quality checks
-
-Make the CLI tools used by the shared quality workflow available on `PATH`:
-actionlint with its ShellCheck helper, codespell, EditorConfig Checker, markdownlint-cli2, Prettier and
-yamllint. The command reads the repository's linter, formatter and ignore files. It skips ignored local dependency, runtime and private artifact trees that are absent from a clean CI checkout.
+Preview the refactoring without modifying files.
 
 ```bash
-composer quality
+composer rector-check
 ```
-
-## Workflow security checks
-
-Make zizmor and Gitleaks available on `PATH`. Audit the current workflow files
-with the same pedantic persona used by the shared security workflow:
-
-```bash
-composer zizmor
-```
-
-Run that audit and scan Git history for secrets with the repository's Gitleaks
-configuration. Findings make the command fail; inspect them rather than disabling
-the checks.
-
-```bash
-composer security
-```
-
-Zizmor needs GitHub API access for its online audits. If the tool runs offline,
-report that limit separately. To request an offline audit explicitly:
-
-```bash
-composer zizmor -- --offline
-```
-
-Report hosted CI execution and its PHP/OS matrix separately from these local
-commands. Keep generated reports in ignored `internal/`.
 
 ## Coding standards (ECS)
 
-Check coding standards without modifying files:
+Check coding standards without modifying files.
 
 ```bash
 composer ecs-check
 ```
 
-`composer ecs` applies fixes. Review its changes before keeping them.
-
-Run Easy Coding Standard (ECS) and apply fixes.
+Apply coding standard fixes. Review the changes before keeping them.
 
 ```bash
 composer ecs
@@ -88,11 +63,37 @@ Run mutation testing.
 composer mutation
 ```
 
-Run mutation testing with static analysis enabled.
+Run mutation testing with PHPStan static analysis enabled.
 
 ```bash
 composer mutation-static
 ```
+
+Thresholds, thread count and memory options live in `infection.json5`. CI enforces the same thresholds.
+
+## Repository quality checks
+
+Make the CLI tools used by the shared quality workflow available on `PATH`:
+actionlint with its ShellCheck helper, codespell, EditorConfig Checker, markdownlint-cli2, Prettier and
+yamllint. Run all checks:
+
+```bash
+composer quality
+```
+
+Each tool also has its own script:
+
+```bash
+composer actionlint
+composer codespell
+composer editorconfig-checker
+composer markdownlint
+composer prettier
+composer yamllint
+```
+
+The linter configuration lives in `.github/linters`, and the Prettier configuration in `.prettierrc.json` and
+`.prettierignore`. CI uses the same files.
 
 ## Static analysis (PHPStan)
 
@@ -109,6 +110,38 @@ Run the full test suite.
 ```bash
 composer tests
 ```
+
+## Workflow security checks
+
+Make zizmor and Gitleaks available on `PATH`. Audit the current workflow files
+with the same pedantic persona used by the shared security workflow:
+
+```bash
+composer zizmor
+```
+
+Scan Git history for secrets with the repository's Gitleaks configuration:
+
+```bash
+composer gitleaks
+```
+
+Run both checks. Findings make the command fail; inspect them rather than
+disabling the checks.
+
+```bash
+composer security
+```
+
+Zizmor needs GitHub API access for its online audits. If the tool runs offline,
+report that limit separately. To request an offline audit explicitly:
+
+```bash
+composer zizmor -- --offline
+```
+
+Report hosted CI execution and its PHP/OS matrix separately from these local
+commands. Keep generated reports in ignored `internal/`.
 
 ## Passing extra arguments
 

@@ -1,6 +1,7 @@
 # AI agents (if present)
 .codex
-.claude
+.claude/*
+!.claude/skills/
 
 # codecoverage (if present)
 code_coverage
@@ -40,6 +41,9 @@ package-lock.json
 .phpunit.cache
 .phpunit.result.cache
 
+# private maintainer files (if present)
+/internal/
+
 # vagrant (if present)
 .vagrant
 
@@ -56,4 +60,3 @@ Thumbs.db
 .buildpath
 .project
 .settings
-/internal/
