@@ -3,14 +3,16 @@
 runtime/**
 
 # Dependencies.
+node_modules/**
 vendor/**
 
-# Dependency lockfile ignored by git.
+# Dependency lockfiles.
 composer.lock
+foxy.lock
 
 # License texts ship verbatim.
 **/LICENSE*
-internal/**
-node_modules/**
-foxy.lock
+
+# Private maintainer files and coverage reports.
 code_coverage/**
+internal/**
