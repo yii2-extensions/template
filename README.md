@@ -27,7 +27,7 @@
 
 <p align="center">
     <strong>A Yii2 extension template to create your own Yii2 extensions</strong><br>
-    <em>PHPUnit, PHPStan, Codeception, and best practices ready out of the box</em>
+    <em>PHPUnit, PHPStan, Infection, ECS, and GitHub Actions ready out of the box</em>
 </p>
 
 ## Features
@@ -42,29 +42,42 @@
 ### Installation
 
 ```bash
-composer require github_username/github_repository-name
+composer require github_username/github_repository-name "yiisoft/yii2:^22.0@dev"
 ```
 
-### Basic Usage
+### Basic usage
 
 Describe how to use your extension in a basic way.
 
+```php
+use yii\template\Example;
+
+$example = new Example();
+
+$legacy = $example->getExample(true);
+```
+
 ## Documentation
 
-For detailed configuration options and advanced usage.
+- 📚 [Installation guide](docs/installation.md)
+- ⚙️ [Configuration guide](docs/configuration.md)
+- 💡 [Usage examples](docs/examples.md)
+- 🧪 [Testing guide](docs/testing.md)
 
-- 📚 [Installation Guide](docs/installation.md)
-- ⚙️ [Configuration Reference](docs/configuration.md)
-- 💡 [Usage Examples](docs/examples.md)
-- 🧪 [Testing Guide](docs/testing.md)
-- 🛠️ [Development Guide](docs/development.md)
+The guides and the [API reference](https://yii2-framework.github.io/docs/extensions/template/reference/) generated
+from the PHPDoc in `src/` are published at <https://yii2-framework.github.io/docs/extensions/template/>.
+
+AI agents: read <https://yii2-framework.github.io/docs/llms.txt>, the index of the documentation site, and fetch the
+Markdown version of a page by appending `index.md` to its URL, for example
+<https://yii2-framework.github.io/docs/extensions/template/installation/index.md>. For the Yii conventions this
+package builds on, install the
+[`yii2-framework` skill](https://github.com/yii2-extensions/skill/tree/main/skills/yii2-framework)
+through the [shared Composer setup](https://yii2-framework.github.io/docs/project/ai-agents/#composer-installation).
 
 ## Package information
 
 [![PHP](https://img.shields.io/badge/%3E%3D8.3-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/releases/8.3/en.php)
 [![Yii 22.0.x](https://img.shields.io/badge/22.0.x-0073AA.svg?style=for-the-badge&logo=yii&logoColor=white)](https://github.com/yiisoft/yii2/tree/22.0)
-[![Latest Stable Version](https://img.shields.io/packagist/v/yii2-extensions/template.svg?style=for-the-badge&logo=packagist&logoColor=white&label=Stable)](https://packagist.org/packages/yii2-extensions/template)
-[![Total Downloads](https://img.shields.io/packagist/dt/yii2-extensions/template.svg?style=for-the-badge&logo=composer&logoColor=white&label=Downloads)](https://packagist.org/packages/yii2-extensions/template)
 
 ## Project status
 
@@ -76,6 +89,9 @@ For detailed configuration options and advanced usage.
 ## Our social networks
 
 [![Follow on X](https://img.shields.io/badge/-Follow%20on%20X-1DA1F2.svg?style=for-the-badge&logo=x&logoColor=white&labelColor=000000)](https://x.com/Terabytesoftw)
+[![Follow on Facebook](https://img.shields.io/badge/-Follow%20on%20Facebook-1877F2.svg?style=for-the-badge&logo=facebook&logoColor=white&labelColor=000000)](https://www.facebook.com/wilmer.arambula.9)
+[![Join our Subreddit](https://img.shields.io/badge/-Join%20our%20Subreddit-FF4500.svg?style=for-the-badge&logo=reddit&logoColor=white&labelColor=000000)](https://www.reddit.com/r/Yii2/)
+[![Join on Telegram](https://img.shields.io/badge/-Join%20on%20Telegram-26A5E4.svg?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000)](https://t.me/yii_framework_in_english)
 
 ## License
 

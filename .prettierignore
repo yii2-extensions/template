@@ -10,3 +10,7 @@ composer.lock
 
 # License texts ship verbatim.
 **/LICENSE*
+internal/**
+node_modules/**
+foxy.lock
+code_coverage/**

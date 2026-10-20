@@ -2,42 +2,18 @@
 
 ## System requirements
 
-- [`PHP`](https://www.php.net/downloads) 8.1 or higher.
+- [`PHP`](https://www.php.net/downloads) 8.3 or higher.
 - [`Composer`](https://getcomposer.org/download/) for dependency management.
-- [`Yii2`](https://github.com/yiisoft/yii2) 2.0.53+ or 22.x.
+- [`Yii2`](https://github.com/yiisoft/yii2/tree/22.0) 22.0 development branch.
 
 ## Installation
 
-### Method 1: Using [Composer](https://getcomposer.org/download/) (recommended)
-
-Install the extension.
+Install the extension with [Composer](https://getcomposer.org/download/).
 
 ```bash
-composer require github_username/github_repository-name
+composer require github_username/github_repository-name "yiisoft/yii2:^22.0@dev"
 ```
 
-### Method 2: Manual installation
+The application must explicitly allow the Yii development branch, as shown in the command above.
 
-Add to your `composer.json`.
-
-```json
-{
-    "require": {
-        "github_username/github_repository-name": "^1.0"
-    }
-}
-```
-
-Then run.
-
-```bash
-composer update
-```
-
-## Next steps
-
-Once the installation is complete.
-
-- ⚙️ [Configuration Reference](configuration.md)
-- 💡 [Usage Examples](examples.md)
-- 🧪 [Testing Guide](testing.md)
+[Back to documentation](../README.md#documentation)
