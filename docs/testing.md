@@ -4,20 +4,20 @@ This package provides a consistent set of [Composer](https://getcomposer.org/) s
 
 Tool references:
 
-- [Composer Require Checker](https://github.com/maglnet/ComposerRequireChecker) for dependency definition checks.
-- [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard) for coding standards.
-- [Infection](https://infection.github.io/) for mutation testing.
-- [PHPStan](https://phpstan.org/) for static analysis.
-- [PHPUnit](https://phpunit.de/) for unit tests.
-- [Rector](https://github.com/rectorphp/rector) for automated refactoring.
 - [actionlint](https://github.com/rhysd/actionlint) for GitHub Actions workflow linting.
 - [codespell](https://github.com/codespell-project/codespell) for spelling checks.
+- [Composer Require Checker](https://github.com/maglnet/ComposerRequireChecker) for dependency definition checks.
+- [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard) for coding standards.
 - [EditorConfig Checker](https://github.com/editorconfig-checker/editorconfig-checker) for EditorConfig compliance.
+- [Gitleaks](https://github.com/gitleaks/gitleaks) for secret scanning.
+- [Infection](https://infection.github.io/) for mutation testing.
 - [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) for Markdown linting.
+- [PHPStan](https://phpstan.org/) for static analysis.
+- [PHPUnit](https://phpunit.de/) for unit tests.
 - [Prettier](https://prettier.io/) for Markdown and YAML formatting checks.
+- [Rector](https://github.com/rectorphp/rector) for automated refactoring.
 - [yamllint](https://github.com/adrienverge/yamllint) for YAML linting.
 - [zizmor](https://github.com/zizmorcore/zizmor) for GitHub Actions security audits.
-- [Gitleaks](https://github.com/gitleaks/gitleaks) for secret scanning.
 
 ## Automated refactoring (Rector)
 
