@@ -15,7 +15,7 @@ return [
 ```
 
 Document every option in the PHPDoc of its property in `src/`: the API reference generated from it lists each property
-with its type, default value and description, so this guide explains how the options work together instead of
-repeating them in a table.
+with its type, default value and description, so this guide explains how the options work together instead of repeating
+them in a table.
 
 [Back to documentation](../README.md#documentation)
