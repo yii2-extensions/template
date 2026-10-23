@@ -64,15 +64,21 @@ $legacy = $example->getExample(true);
 - 💡 [Usage examples](docs/examples.md)
 - 🧪 [Testing guide](docs/testing.md)
 
-The guides and the [API reference](https://yii2-framework.github.io/docs/extensions/template/reference/) generated
-from the PHPDoc in `src/` are published at <https://yii2-framework.github.io/docs/extensions/template/>.
+The guides and the [API reference](https://yii2-framework.github.io/docs/extensions/template/reference/) generated from
+the PHPDoc in `src/` are published at <https://yii2-framework.github.io/docs/extensions/template/>.
 
-AI agents: read <https://yii2-framework.github.io/docs/llms.txt>, the index of the documentation site, and fetch the
-Markdown version of a page by appending `index.md` to its URL, for example
-<https://yii2-framework.github.io/docs/extensions/template/installation/index.md>. For the Yii conventions this
-package builds on, install the
-[`yii2-framework` skill](https://github.com/yii2-extensions/skill/tree/main/skills/yii2-framework)
-through the [shared Composer setup](https://yii2-framework.github.io/docs/project/ai-agents/#composer-installation).
+## AI assistance
+
+AI agents: read the [documentation index](https://yii2-framework.github.io/docs/llms.txt) and fetch the Markdown version
+of a page by appending `index.md` to its URL. The
+[AI agents guide](https://yii2-framework.github.io/docs/project/ai-agents/) covers skill installation, client setup and
+verification.
+
+- 🧭 [`yii2-framework` skill](https://yii2-framework.github.io/docs/guide/skills/yii2-framework/): Yii 22.0 application
+  conventions.
+
+The hosted documentation covers Yii 22.0. If it does not match the installed revision or is unavailable, use the
+[repository guides](#documentation), the source PHPDoc and the [changelog](CHANGELOG.md).
 
 ## Package information
 
