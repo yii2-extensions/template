@@ -14,14 +14,14 @@
     <a href="https://github.com/yii2-extensions/template/actions/workflows/build.yml" target="_blank">
         <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/build.yml?style=for-the-badge&label=PHPUnit&logo=github" alt="PHPUnit">
     </a>
+    <a href="https://codecov.io/github/yii2-extensions/template" target="_blank">
+        <img src="https://img.shields.io/codecov/c/github/yii2-extensions/template.svg?style=for-the-badge&logo=codecov&logoColor=white&label=Coverage" alt="Coverage">
+    </a>
     <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/template/main" target="_blank">
         <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Ftemplate%2Fmain" alt="Mutation Testing">
     </a>
     <a href="https://github.com/yii2-extensions/template/actions/workflows/static.yml" target="_blank">
         <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
-    </a>
-    <a href="https://github.com/yii2-extensions/template/actions/workflows/security.yml" target="_blank">
-        <img src="https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/security.yml?style=for-the-badge&label=Security&logo=github" alt="Security">
     </a>
 </p>
 
@@ -33,8 +33,8 @@
 ## Features
 
 <picture>
-    <source media="(min-width: 768px)" srcset="./docs/svgs/features.svg">
-    <img src="./docs/svgs/features-mobile.svg" alt="Feature Overview" style="width: 100%;">
+    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/yii2-extensions/template/main/docs/svgs/features.svg">
+    <img src="https://raw.githubusercontent.com/yii2-extensions/template/main/docs/svgs/features-mobile.svg" alt="Feature Overview" style="width: 100%;">
 </picture>
 
 ## Quick start
@@ -59,10 +59,10 @@ $legacy = $example->getExample(true);
 
 ## Documentation
 
-- 📚 [Installation guide](docs/installation.md)
-- ⚙️ [Configuration guide](docs/configuration.md)
-- 💡 [Usage examples](docs/examples.md)
-- 🧪 [Testing guide](docs/testing.md)
+- 📚 [Installation guide](https://github.com/yii2-extensions/template/blob/main/docs/installation.md)
+- ⚙️ [Configuration guide](https://github.com/yii2-extensions/template/blob/main/docs/configuration.md)
+- 💡 [Usage examples](https://github.com/yii2-extensions/template/blob/main/docs/examples.md)
+- 🧪 [Testing guide](https://github.com/yii2-extensions/template/blob/main/docs/testing.md)
 
 The guides and the [API reference](https://yii2-framework.github.io/docs/extensions/template/reference/) generated from
 the PHPDoc in `src/` are published at <https://yii2-framework.github.io/docs/extensions/template/>.
@@ -87,10 +87,20 @@ The hosted documentation covers Yii 22.0. If it does not match the installed rev
 
 ## Project status
 
-[![Codecov](https://img.shields.io/codecov/c/github/yii2-extensions/template.svg?style=for-the-badge&logo=codecov&logoColor=white&label=Coverage)](https://codecov.io/github/yii2-extensions/template)
 [![PHPStan Level Max](https://img.shields.io/badge/PHPStan-Level%20Max-4F5D95.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yii2-extensions/template/actions/workflows/static.yml)
 [![Quality](https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/quality.yml?style=for-the-badge&label=Quality&logo=github)](https://github.com/yii2-extensions/template/actions/workflows/quality.yml)
-[![StyleCI](https://img.shields.io/badge/StyleCI-Passed-44CC11.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.styleci.io/repos/698621511?branch=main)
+[![StyleCI](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fgithub.styleci.io%2Frepos%2F698621511%2Fshield%3Fbranch%3Dmain&query=%2F%2F*%5Blocal-name%28%29%3D%27text%27%5D%5B2%5D&label=StyleCI&style=for-the-badge&logo=github&logoColor=white&color=4F5D95)](https://github.styleci.io/repos/698621511?branch=main)
+
+## Security
+
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yii2-extensions/template/badge?style=for-the-badge)](https://scorecard.dev/viewer/?uri=github.com/yii2-extensions/template)
+[![Zizmor](https://img.shields.io/github/actions/workflow/status/yii2-extensions/template/security.yml?style=for-the-badge&label=Zizmor&logo=github)](https://github.com/yii2-extensions/template/actions/workflows/security.yml)
+
+## Built with AI
+
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-D97757.svg?style=for-the-badge&logo=claude&logoColor=white)](https://claude.com/claude-code)
+[![Built with Codex](https://img.shields.io/badge/Built%20with-Codex-10A37F.svg?style=for-the-badge&logo=openaigym&logoColor=white)](https://openai.com/codex)
+[![Reviewed by CodeRabbit](https://img.shields.io/badge/Reviewed%20by-CodeRabbit-FF570A.svg?style=for-the-badge&logo=coderabbit&logoColor=white)](https://www.coderabbit.ai)
 
 ## Our social networks
 
