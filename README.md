@@ -59,10 +59,12 @@ $legacy = $example->getExample(true);
 
 ## Documentation
 
-- 📚 [Installation guide](https://github.com/yii2-extensions/template/blob/main/docs/installation.md)
-- ⚙️ [Configuration guide](https://github.com/yii2-extensions/template/blob/main/docs/configuration.md)
-- 💡 [Usage examples](https://github.com/yii2-extensions/template/blob/main/docs/examples.md)
-- 🧪 [Testing guide](https://github.com/yii2-extensions/template/blob/main/docs/testing.md)
+Practical guides and examples for creating and testing a Yii2 extension.
+
+- 📚 [Installation Guide](https://github.com/yii2-extensions/template/blob/main/docs/installation.md)
+- ⚙️ [Configuration Guide](https://github.com/yii2-extensions/template/blob/main/docs/configuration.md)
+- 💡 [Usage Examples](https://github.com/yii2-extensions/template/blob/main/docs/examples.md)
+- 🧪 [Testing Guide](https://github.com/yii2-extensions/template/blob/main/docs/testing.md)
 
 The guides and the [API reference](https://yii2-framework.github.io/docs/extensions/template/reference/) generated from
 the PHPDoc in `src/` are published at <https://yii2-framework.github.io/docs/extensions/template/>.

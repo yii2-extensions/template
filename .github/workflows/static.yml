@@ -17,4 +17,6 @@ permissions:
 
 jobs:
   phpstan:
-    uses: yii2-framework/actions/.github/workflows/phpstan.yml@7a2d60325d59c5c9377fd445c912f2f1bfacf9d9 # v2.0.2
+    uses: yii2-framework/actions/.github/workflows/phpstan.yml@1a1132f393d2572abaf9cc1fe75c5c86fce8c211 # v2.0.8
+    with:
+      ignore-platform-reqs-php-version: "[8.6]"
